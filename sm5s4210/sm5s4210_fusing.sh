@@ -197,6 +197,7 @@ print_success "$?"
 echo "Filesystem Storage Copy.."
 mount "$SD_Type"1 temp
 cp -r ./Image/storage/* ./temp/
+sleep 2
 umount temp
 print_success "$?"
 rm -rf temp
